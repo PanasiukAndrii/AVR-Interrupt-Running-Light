@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "Андрій Миколайович",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -99.6,
+      "left": 109.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -99.6,
+      "left": 32.6,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-led", "id": "led3", "top": -99.6, "left": 71, "attrs": { "color": "green" } },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": -79,
+      "left": 201.6,
+      "rotate": 90,
+      "attrs": { "bounce": "0" }
+    }
+  ],
+  "connections": [
+    [ "btn1:1.r", "uno:3", "green", [ "v0" ] ],
+    [ "led1:A", "uno:5", "green", [ "v48", "h76.8" ] ],
+    [ "led3:A", "uno:6", "green", [ "v38.4", "h96" ] ],
+    [ "led2:A", "uno:7", "green", [ "v28.8", "h134.4" ] ],
+    [ "led2:C", "uno:GND.2", "green", [ "h-86", "v268.8", "h207.9" ] ],
+    [ "led3:C", "uno:GND.2", "green", [ "v9.6", "h-114.8", "v259.2", "h198.3" ] ],
+    [ "led1:C", "uno:GND.2", "green", [ "v19.2", "h-143.6", "v249.6", "h188.7" ] ],
+    [ "btn1:2.l", "uno:GND.3", "green", [ "v-25.6", "h-255.6", "v326.4", "h230.4" ] ]
+  ],
+  "dependencies": {}
+}
