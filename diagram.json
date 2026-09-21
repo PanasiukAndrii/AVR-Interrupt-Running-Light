@@ -22,10 +22,10 @@
     {
       "type": "wokwi-pushbutton-6mm",
       "id": "btn1",
-      "top": -79,
-      "left": 201.6,
+      "top": -75.8,
+      "left": 205.6,
       "rotate": 90,
-      "attrs": { "bounce": "0" }
+      "attrs": { "color": "red", "xray": "1", "bounce": "0" }
     }
   ],
   "connections": [
@@ -36,7 +36,7 @@
     [ "led2:C", "uno:GND.2", "green", [ "h-86", "v268.8", "h207.9" ] ],
     [ "led3:C", "uno:GND.2", "green", [ "v9.6", "h-114.8", "v259.2", "h198.3" ] ],
     [ "led1:C", "uno:GND.2", "green", [ "v19.2", "h-143.6", "v249.6", "h188.7" ] ],
-    [ "btn1:2.l", "uno:GND.3", "green", [ "v-25.6", "h-255.6", "v326.4", "h230.4" ] ]
+    [ "btn1:2.l", "uno:GND.3", "green", [ "v-25.6", "h-259.6", "v323.2", "h227" ] ]
   ],
   "dependencies": {}
 }
